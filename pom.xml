@@ -6,7 +6,7 @@
     <version>1.0</version>
     <packaging>pom</packaging>
     
-    <name>Arquitectura Yosuer</name>
+    <name>arquitecturaY</name>
     <description>Arquitectura NetflixOSS</description>
     <url>https://github.com/yosuer/arquitecturaY</url>
     <organization>
@@ -20,5 +20,7 @@
     
     <modules>
         <module>arquitecturaY-eureka-server</module>
+        <module>pelicula-loader</module>
+        <module>bbddmongo</module>
     </modules>
 </project>
