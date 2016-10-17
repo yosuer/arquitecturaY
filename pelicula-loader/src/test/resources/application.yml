@@ -1,0 +1,10 @@
+com:
+    yosuer:
+        pelicula-loader:
+            apiomdb:
+                url: http://www.laapimock.com/
+            apipelicula:
+                url: http://www.hostmock.com/
+logging:
+    level:
+        com.yosuer: DEBUG

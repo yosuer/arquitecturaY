@@ -1,0 +1,30 @@
+server:
+    port: 9090
+
+spring:
+    application:
+        name: pelicula-loader
+        
+eureka:
+    client:
+        serviceUrl:
+            defaultzone: http://localhost:8761/eureka/,http://toshiba02:8762/eureka/
+    instance:
+        nonSecurePortEnabled: false
+        securePortEnabled: true
+        metadataMap:
+            appOwner: yosuer
+            description: Pelicula loader
+            instanceId: ${spring.application.name}:${server.port}
+        
+com:
+    yosuer:
+        pelicula-loader:
+            apiomdb:
+                url: http://www.omdbapi.com/
+            apipelicula:
+                url: http://localhost:9095/peliculas
+
+logging:
+    level:
+        com.yosuer: INFO
